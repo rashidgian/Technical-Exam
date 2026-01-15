@@ -12,9 +12,9 @@ A simple command-line task manager application built in Python, allowing users t
 
 ## Setup Instructions
 
-### 1. Set up a Python virtual environment
-
 ```bash
+### Set up a Python virtual environment
+
 # Create a virtual environment named "venvname"
 python -m venv venvname
 
