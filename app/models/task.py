@@ -1,8 +1,7 @@
 from datetime import datetime
 
 class Task:
-    """Represents a task entity."""
-    
+
     ALLOWED_STATUSES = ["Pending", "In Progress", "Completed"]
     ALLOWED_PRIORITIES = ["Low", "Medium", "High"]
 
@@ -18,8 +17,8 @@ class Task:
         self.due_date = due_date
         self.priority = priority.title()
         self.status = status
-        self.created_at = datetime.now()  # optional; useful for in-memory tasks
+        self.created_at = datetime.now() 
 
     def mark_completed(self):
-        """Mark this task as completed."""
+        # Marks a tasks as completed 
         self.status = "Completed"

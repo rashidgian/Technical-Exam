@@ -35,7 +35,7 @@ class TaskManager:
             query += f" WHERE {filter_by}=%s"
             params = (filter_value,)
 
-        query += " ORDER BY task_id ASC"
+        query += " ORDER BY task_id ASC" # If left blank, order by task_id
         return self.db.execute(query, params)
 
     # -------------------- MARK TASK AS COMPLETED --------------------

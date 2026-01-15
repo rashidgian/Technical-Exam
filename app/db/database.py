@@ -1,8 +1,8 @@
 import pymysql
 
 class Database:
-    """Handles database connection and raw SQL execution."""
-
+    # Database Connection Setup 
+    
     def __init__(self):
         self.connection = pymysql.connect(
             host="localhost",
