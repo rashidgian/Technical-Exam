@@ -1,5 +1,6 @@
 from datetime import datetime
 
+# Validates if date strings are in correct format
 def validate_date(date_str):
     try:
         return datetime.strptime(date_str, "%Y-%m-%d").date()
