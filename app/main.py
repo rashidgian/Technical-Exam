@@ -54,6 +54,16 @@ def main():
 
             # -------------------- MARK COMPLETED --------------------
             elif choice == "3":
+                tasks = manager.list_tasks()
+    
+                if not tasks:
+                    print("No tasks found to update.")
+                    continue
+
+                # Display tasks
+                print("\n--- Tasks ---")
+                for t in tasks:
+                    print(f"[{t['task_id']}] {t['title']} - {t['description']} - {t['status']} - Due: {t['due_date']} - Priority: {t['priority']}")
                 task_id_input = input("Task ID to mark as completed: ").strip()
                 try:
                     task_id = int(task_id_input)
