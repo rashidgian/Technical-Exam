@@ -12,9 +12,18 @@ A simple command-line task manager application built in Python, allowing users t
 
 ## Setup Instructions
 
-### Set up a Python virtual environment
-python -m venv "venvname"
+### 1. Set up a Python virtual environment
+
+```bash
+# Create a virtual environment named "venvname"
+python -m venv venvname
+
+# Activate the virtual environment
+# Windows
 venvname\Scripts\activate
+
+# macOS / Linux
+source venvname/bin/activate
 
 ### Install Dependencies
 pip install -r requirements.txt
