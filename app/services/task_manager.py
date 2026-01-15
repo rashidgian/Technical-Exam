@@ -2,7 +2,7 @@ from app.db.database import Database
 from app.models.task import Task
 
 class TaskManager:
-    """Handles task-related operations."""
+    # Task Related Operations
 
     ALLOWED_STATUSES = ["Pending", "In Progress", "Completed"]
 
