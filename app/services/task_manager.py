@@ -82,7 +82,7 @@ class TaskManager:
         
     # -------------------- DELETE TASK --------------------
     def delete_task(self, task_id):
-        """Delete a task by its task_id."""
+        # Delete a task by its task id
         task_id = int(task_id)
         query = "DELETE FROM tasks WHERE task_id=%s"
         self.db.execute(query, (task_id,))
